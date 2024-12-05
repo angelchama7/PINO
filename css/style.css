@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    }
+    
+    *:focus {
+      outline: none;
+    }
+    body {
+    font-family: Arial;
+    background-color: #86898b;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .login {
+    margin: 20px auto;
+    width: 300px;
+    }
+    .login-screen {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px
+    }
+    
+    .app-title {
+    text-align: center;
+    color: #ec0000;
+    }
+    
+    .login-form {
+    text-align: center;
+    }
+    .control-group {
+    margin-bottom: 10px;
+    }
+    
+    input {
+    text-align: center;
+    background-color: #fafafa;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+    }
+    
+    input:focus {
+    border: 2px solid #ff0000;
+    box-shadow: none;
+    }
+    
+    .btn {
+        --color: #fa051a;
+        padding: 0.8em 1.7em;
+        background-color: transparent;
+        border-radius: .3em;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: .5s;
+        font-weight: 400;
+        font-size: 17px;
+        border: 1px solid;
+        font-family: inherit;
+        text-transform: uppercase;
+        color: var(--color);
+        z-index: 1;
+       }
+       
+       .button::before, .button::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: var(--color);
+        transition: 1s ease;
+       }
+       
+       .button::before {
+        top: -1em;
+        left: -1em;
+       }
+       
+       .button::after {
+        left: calc(100% + 1em);
+        top: calc(100% + 1em);
+       }
+       
+       .button:hover::before, .button:hover::after {
+        height: 410px;
+        width: 410px;
+       }
+       
+       .button:hover {
+        color: rgb(247, 10, 10);
+       }
+       
+       .button:active {
+        filter: brightness(.8);
+       
+       
+      margin: 0 auto;
+    }
+    
+    .btn:hover {
+      background-color: #0c6363;
+    }
+    
+    .login-link {
+      font-size: 12px;
+      color: #444;
+      display: block;
+      margin-top: 12px;
+    }                                         
+              

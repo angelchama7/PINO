@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería con Carrusel y Carrito</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h7>GALERIA DE PRODUCTOS</h7>
+        </div>
+        <div class="cart">
+            <h7 id="cart-count"><h7>...0 🛒
+        </div>
+    </header>
+    <main>
+        
+        <div class="carousel">
+            <button class="prev" onclick="changeImage(-1)">❮</button>
+            <div class="image-container">
+                
+                <img src="img/qq.jpg" alt="">
+                <img src="img/ww.jpg" alt="">
+                <img src="img/ee.jpg" alt="">
+                <img src="img/rr.jpg" alt="">
+                <img src="img/tt.jpg" alt="">
+                <img src="img/yy.jpg" alt="">
+                <img src="img/uu.jpg" alt="">
+               
+
+            
+
+            </div>
+            <button class="next" onclick="changeImage(1)">❯</button>
+        </div>
+        
+        <div class="gallery-container">
+            <div class="image-item" onclick="addToCart('https://via.placeholder.com/400')">
+                <img src="img/1.jpg" alt="Imagen 1">
+                <div class="text-overlay">
+                    <h3>Descripción 1</h3>
+                    <p>¡Haz clic para agregar al carrito!</p>
+                </div>
+            </div>
+            <div class="image-item" onclick="addToCart('https://via.placeholder.com/400')">
+                <img src="img/2.jpg" alt="Imagen 2">
+                <div class="text-overlay">
+                    <h3>Descripción 2</h3>
+                    <p>¡Haz clic para agregar al carrito!</p>
+                </div>
+            </div>
+            <div class="image-item" onclick="addToCart('https://via.placeholder.com/400')">
+                <img src="img/3.jpg" alt="Imagen 3">
+                <div class="text-overlay">
+                    <h3>Descripción 3</h3>
+                    <p>¡Haz clic para agregar al carrito!</p>
+                </div>
+            </div>
+            <div class="image-item" onclick="addToCart('https://via.placeholder.com/400')">
+                <img src="img/4.jpg" alt="Imagen 4">
+                <div class="text-overlay">
+                    <h3>Descripción 4</h3>
+                    <p>¡Haz clic para agregar al carrito!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-item" onclick="addToCart('https://via.placeholder.com/400')">
+            <img src="img/55.jpg" alt="Imagen 4">
+            <div class="text-overlay">
+                <h3>Descripción 5</h3>
+                <p>¡Haz clic para agregar al carrito!</p>
+            </div>
+        </div>
+    </div>
+    <div class="image-item" onclick="addToCart('https://via.placeholder.com/400')">
+        <img src="img/88.jpg" alt="Imagen 4">
+        <div class="text-overlay">
+            <h3>Descripción 6</h3>
+            <p>¡Haz clic para agregar al carrito!</p>
+        </div>
+    </div>
+</div>
+<div class="image-item" onclick="addToCart('https://via.placeholder.com/400')">
+    <img src="img/77.jpg" alt="Imagen 4">
+    <div class="text-overlay">
+        <h3>Descripción 7</h3>
+        <p>¡Haz clic para agregar al carrito!</p>
+    </div>
+</div>
+
+</div>
+<div> 
+<a href="index.html"><button  href="index.html" class="button"></button>
+</div></a>
+
+
+        <!-- Carrito desplegable -->
+        <div id="cart-details" class="cart-details">
+            <h3>Carrito de Compras</h3>
+            <div id="cart-items"></div>
+            <button onclick="clearCart()">Limpiar carrito</button>
+        </div>
+    </main>
+        
+
+    <script src="scripts.js"></script>
+</body>
+</html>

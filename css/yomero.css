@@ -1,0 +1,339 @@
+#main-header {
+	background: #000000;
+	color: #000000;
+	height: 77px;
+	text-align: center;
+
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	/*arreglar el header para verse delante del rotador*/
+}	
+	#main-header a {
+		color: #ffffff;
+	}
+	
+	#pinn{
+		width: calc(18vh - 17px );
+		height: 15%;
+		position: fixed;
+		
+	}
+	.mama{
+		display: flex;
+		color: #fff;
+		position: fixed;
+        font-size: 13px;
+        height: 100%;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        font-family:'Poppins', sans-serif ;
+        opacity: 0.4;
+
+	}
+
+#logo-header {
+	text-decoration: none;
+	float: center;
+	padding: 15px 0 0 20px;
+	text-align: flex;
+	align-items: center;
+	transition: 0.5s;
+	opacity: 0.5;
+}
+#logo-header:hover{
+	opacity: 1;
+
+}
+#header-button{
+	align-items: center;
+	width: 50px;
+	height: 50%;
+	padding: 0;
+}
+	
+	
+	#logo-header .site-name {
+		display: block;
+		 font-family: 'Poppins', sans-serif;
+		font-weight: 900;
+		font-size: 1.0em;
+		color:#fff;
+		text-align: right;
+		
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #009915;
+	}
+
+	
+#main-footer {
+	background: #682300;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+
+ /*slider- rotador- baner*/
+
+.baner{
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 77px );/*100 vh es para cambiar el tamaño del rotador*/
+	background-color: blue;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-in-out;
+    background-image: url('../img/foto 1.jpg');
+    animation: baner 20s infinite linear;
+
+}
+.baner-content{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background-color: rgba(0, 22, 40, .5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.baner-content h1{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+	font-size: 40px;
+	text-align: center;
+	font-family: Garamond;/*cambiar por tipografia mas formal*/
+}
+.baner-content a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #FFF;
+	text-transform: uppercase;
+	transition: all .1s ease-in-out;
+}
+.baner-content a:hover{
+	background-color: #fff;
+	color: #333;
+
+}
+@keyframes baner{
+	0%{background-image: url('../img/foto 1.jpg');}
+	25%{background-image: url('../img/foto 1.jpg');}
+	26%{background-image: url('../img/foto 2.jpg');}
+	50%{background-image: url('../img/foto 2.jpg');}
+	51%{background-image: url('../img/foto 3.jpeg');}
+	75%{background-image: url('../img/foto 3.jpeg');}
+    76%{background-image: url('../img/foto 4.jpg');}
+	100%{background-image: url('../img/foto 4.jpg');}
+
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display', serif;
+	background: #000; /* Cambiado a gris oscuro */
+	font-size: 1.3em;
+	line-height: 1.5em;
+	text-align: center;
+	padding-top: 80px;
+}
+.header{
+	height: 60vh !important ;
+	background: url(img/taza pino.jpg) no-repeat center ;
+	background-size: cover ;
+}
+.tittle{
+	margin: 10px;
+	width: 90px;
+	height: 15px;
+	font-size: 55px;;
+    text-transform: uppercase;
+    color: #fff;
+}
+.tittles{
+	font-size: 55px;;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+ h3, h4{
+	font-size: 18px;
+	color: #000;
+}
+.btn{
+	display: inline-block;
+	margin-top: 15 px;
+	padding: 10px 40px;
+	border: 2px solid #fff ;
+	color:#000;
+	text-decoration: none;
+	background: #fff;
+	margin: 10vh;
+}
+ 
+ .btn:hover {
+ 	background: rgba(0, 22, 40, .5);
+ 	cursor: pointer;
+ }
+ .btn-home{
+ 	display: flex;
+ }
+ .content{ /* hacer que los div se vean de forma centrada*/
+ 	height: 80vh;
+ 	display: flex;
+ 	justify-content: center;
+ 	text-align: center;
+ }
+ .sau{
+ 	padding: 30px;
+ 	background: #000;
+ 	display: flex;
+ }
+ .content-about{
+ 	background-image: url('../img/robo.jpg');
+ 	background-size: cover;
+ 	height: 100vh;
+ 	justify-content: center;
+ 	display: flex;
+ 	flex-direction: column;
+ }
+ .content-about .contenido{
+ 	padding: 22vh ;
+ 	background-size: cover;
+    background-color: rgba(0, 22, 40, 0.5);
+ }
+
+ /***************************************************************************************************************/
+ div.galeria{
+ 	float: left;
+	margin: 15vh 25px;
+	border-radius: 10px;
+	width: 300px;
+	height: 250px;
+	border: 1px solid lightcoral;
+}
+
+div.galeria img{
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+
+}
+
+div.galeria:hover{
+	transition: all 0.8s;
+	border: 5px solid lightcoral;
+	transform: translatey(-20px) ;
+	cursor: pointer;
+}
+
+div.pie{
+	text-align: center;
+    text-shadow: 2px 2px 5px lightskyblue;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid lightcoral;
+}
+
+ img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*aqi empieza el footer o pie de pagina color azul*/
+.footer{
+	position: relative;
+	width: 100%;
+	background:#286bc ;
+	min-height: 100px;
+	padding:20px ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.social-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 10px 5px;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.icon-elem{
+	list-style: none;
+}
+
+.icon{
+	color: white;
+	font-size: 32px;
+	display: inline-block;
+    margin: 0 10px;	
+    transition: 0.5s;
+}
+.icon:hover{
+	transform: translateY(-10px);
+}
+
+.menu{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+}
+
+.menu-elem{
+	list-style: none;
+}
+
+.menu-icon{
+	color: whitesmoke;
+	font-size:20px ;
+	display: inline-block;
+	text-decoration: none;
+	margin: 5px 10px;
+	opacity: 0.5;
+	transition: 0.3s;
+}
+
+.menu-icon:hover{
+	opacity: 1;
+}
+ 
+.text{
+	color: #fff;
+	align-items: center;
+	margin-top: 15px;
+	margin-bottom:10px ;
+	font-size: 20px;	
+} 
+
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
